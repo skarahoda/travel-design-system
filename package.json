@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.0",
+    "storybook-zeplin": "^1.5.2-rc.0",
     "styled-components": "^5.3.1"
   }
 }
