@@ -1,19 +1,19 @@
 import { css } from "styled-components";
 
-export const fonts = {
+export const textStyles = {
     Header: css`
     font-family: "Open Sans", monospace;
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
   `,
-    Header_Button_Title: css`
+    HeaderButtonTitle: css`
     font-family: "Open Sans", monospace;
     font-size: 24px;
     font-weight: bold;
     color: #554d56;
   `,
-    Button_Title: css`
+    ButtonTitle: css`
     font-family: "Open Sans", monospace;
     font-size: 16px;
     font-weight: bold;
@@ -26,13 +26,13 @@ export const fonts = {
     font-weight: 600;
     color: #554d56;
   `,
-    Card_Subtitle: css`
+    CardSubtitle: css`
     font-family: "Open Sans", monospace;
     font-size: 14px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.7);
   `,
-    Section_Small_Title: css`
+    SectionSmallTitle: css`
     font-family: "Open Sans", monospace;
     font-size: 14px;
     font-weight: bold;

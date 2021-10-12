@@ -1,9 +1,11 @@
-import { fonts } from "./fonts";
+import { textStyles } from "./textStyles";
 import { colors } from "./colors";
+import { spacing } from "./spacing";
 
 export const theme = {
     colors,
-    fonts
+    textStyles,
+    spacing
 };
 
 export type Theme = typeof theme;
