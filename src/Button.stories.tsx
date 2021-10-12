@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Button } from './Button';
+import { ApplePayButton } from "./ApplePayButton";
 
 export default {
   title: 'Components / Button',
@@ -48,4 +49,9 @@ Warning.args = {
   variant: "warning",
   children: 'Title',
   disabled: false
+};
+
+export const ApplePay = () => <ApplePayButton />;
+ApplePay.parameters = {
+  component: ApplePayButton
 };
