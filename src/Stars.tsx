@@ -2,7 +2,8 @@ import React, { FunctionComponent } from "react";
 import { Star } from "./Star";
 import { styled } from "./styled";
 interface StarsProps {
-    value: number
+    rate: number;
+    className?: string;
 }
 
 const StarsContainer = styled.div`
@@ -22,14 +23,14 @@ function getStarType(value: number, index: number): "empty" | "half" | "full" {
     return "empty";
 }
 
-export const Stars: FunctionComponent<StarsProps> = ({ value }) => {
+export const Stars: FunctionComponent<StarsProps> = ({ rate, className }) => {
     return (
-        <StarsContainer>
-            <Star type={getStarType(value, 0)} />
-            <Star type={getStarType(value, 1)} />
-            <Star type={getStarType(value, 2)} />
-            <Star type={getStarType(value, 3)} />
-            <Star type={getStarType(value, 4)} />
+        <StarsContainer className={className}>
+            <Star type={getStarType(rate, 0)} />
+            <Star type={getStarType(rate, 1)} />
+            <Star type={getStarType(rate, 2)} />
+            <Star type={getStarType(rate, 3)} />
+            <Star type={getStarType(rate, 4)} />
         </StarsContainer>
     )
 }

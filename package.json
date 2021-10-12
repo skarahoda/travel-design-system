@@ -31,14 +31,15 @@
     "@types/react": "^17.0.21",
     "@types/styled-components": "^5.1.14",
     "babel-loader": "^8.2.2",
+    "lit-html": "^2.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "storybook-zeplin": "^1.5.2-rc.0",
     "typescript": "^4.4.3",
     "vue": "^2.6.14"
   },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.0",
-    "storybook-zeplin": "^1.5.2-rc.0",
     "styled-components": "^5.3.1"
   }
 }

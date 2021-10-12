@@ -14,5 +14,14 @@ export const Default = Template.bind({});
 Default.args = {
   title: "Title",
   subtitle: "SUBTITLE",
-  background: "/card_background.png"
+  thumbnail: "/card_background.png"
+};
+
+export const WithReviews = Template.bind({});
+WithReviews.args = {
+  title: "Title",
+  subtitle: "SUBTITLE",
+  thumbnail: "/card_background.png",
+  reviews: 200,
+  rate: 4.5
 };

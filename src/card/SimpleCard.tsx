@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
-import { styled } from "./styled";
+import { styled } from "../styled";
 
-interface CardProps {
+interface SimpleCardProps {
     title: string;
     subtitle: string;
-    background: string;
+    thumbnail: string;
 }
 
 const CardBackground = styled.div<{ background: string; }>`
@@ -13,6 +13,7 @@ const CardBackground = styled.div<{ background: string; }>`
   height: 163px;
   border-radius: 8px;
   background-image: url(${({ background }) => background});
+  background-size: cover;
 `;
 
 const CardContainer = styled.div`
@@ -35,8 +36,8 @@ const Title = styled.div`
   ${({ theme }) => theme.textStyles.Header}
 `;
 
-export const Card: FunctionComponent<CardProps> = ({ title, subtitle, background }) => (
-    <CardBackground background={background}>
+export const SimpleCard: FunctionComponent<SimpleCardProps> = ({ title, subtitle, thumbnail }) => (
+    <CardBackground background={thumbnail}>
         <CardContainer>
             <Subtitle>
                 {subtitle}

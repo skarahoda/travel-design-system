@@ -12,15 +12,15 @@ const Template: ComponentStory<typeof Stars> = (args) => <Stars {...args} />;
 
 export const Empty = Template.bind({});
 Empty.args = {
-  value: 0
+  rate: 0
 };
 
 export const Half = Template.bind({});
 Half.args = {
-  value: 2.5
+  rate: 2.5
 };
 
 export const Full = Template.bind({});
 Full.args = {
-  value: 5
+  rate: 5
 };
