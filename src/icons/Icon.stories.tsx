@@ -25,6 +25,9 @@ export default {
 
 
 export const Profile = (args) => <ProfileIcon {...args} />;
+Profile.args = {
+  color: IconColor.PINK
+};
 Profile.parameters = {
   component: ProfileIcon
 };
