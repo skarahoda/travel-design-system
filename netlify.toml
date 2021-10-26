@@ -1,5 +1,7 @@
 [[headers]]
   for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "https://beta.zeplin.io"
+    Access-Control-Allow-Origin = "https://app.omlet.io"
+[build.environment]
+    STORYBOOK_ZEPLIN_PARENT_ORIGIN = "https://app.omlet.io"
 
